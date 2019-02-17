@@ -6,22 +6,22 @@
       <a href="<%- url_for() %>"><img src="<%- theme.brand %>" alt="<%= config.title %>"></a>
     </div>
   <% } %>
-  <ul class="nav nav-main">
+  <div class="nav nav-main">
     <% for (var i in theme.menu){ %>
-      <li class="nav-item">
-        <a class="nav-item-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-      </li>
+      <div class="nav-item">
+        <a class="nav-item-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a>
+      </div>
     <% } %>
-    <li class="nav-item">
+    <div class="nav-item">
       <a class="nav-item-link nav-item-search" title="<%= __('search') %>">
         <i class="fe fe-search"></i>
-        <%- theme.search_text %>
+        <%- __(theme.search_text) %>
       </a>
-    </li>
-  </ul>
+    </div>
+  </div>
 </nav>
 
-<nav class="navbar navbar-bottom">
+<!-- <nav class="navbar navbar-bottom">
   <ul class="nav">
     <li class="nav-item">
       <% if (theme.rss){ %>
@@ -31,7 +31,7 @@
       <% } %>
     </li>
   </ul>
-</nav>
+</nav> -->
 
 <div class="search-form-wrap">
   <%- partial('post/search') %>

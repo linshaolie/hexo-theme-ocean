@@ -9,20 +9,20 @@ rss: /atom.xml
 
 # Miscellaneous
 favicon: /favicon.ico
-brand: /images/hexo.svg
+brand: /images/logoko-2.png
 
 # Ocean Video
 # Because I put videos in multiple formats on the same path, I just labeled the path here.
 ocean:
   overlay: true
   path: /images/ocean/
-  brand: /images/hexo-inverted.svg
+  brand: /images/logoko-5.png
 
 # Content
 excerpt_link: Read More...
-nav_prev_text: Newer posts
-nav_next_text: Olde posts
-share_text: Share
+nav_prev_text: prev
+nav_next_text: next
+share_text: share
 
 # fancybox
 fancybox: true

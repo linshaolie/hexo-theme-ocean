@@ -20,15 +20,16 @@
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
-          <a class="article-more-link" href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a>
+          <a class="article-more-link" href="<%- url_for(post.path) %>"><%= __(theme.excerpt_link) %></a>
         <% } %>
       <% } else { %>
         <%- post.content %>
       <% } %>
     </div>
     <footer class="article-footer">
+      <br>
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>"
-         class="article-share-link"><%- theme.share_text %></a>
+         class="article-share-link"><%- __(theme.share_text) %></a>
       <%- partial('post/tag') %>
     </footer>
 
@@ -43,5 +44,3 @@
   <%} %>
 
 </article>
-
-
